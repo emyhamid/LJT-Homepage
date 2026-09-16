@@ -1,0 +1,9 @@
+<ul class="publication-list">
+  {% for publication in site.data.publications %}
+  <li>
+    <strong>{{ publication.title | escape }}</strong>.
+    {{ publication.venue | escape }} {{ publication.year }}.
+    {{ publication.role | escape }}.
+  </li>
+  {% endfor %}
+</ul>
